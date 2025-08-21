@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A129DD68-15D1-414E-B351-2A6F9572C48B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mtkclient</RootNamespace>
+    <AssemblyName>MTKClientDaxFlashCSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconireverse.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MTK.Client\Device.Handler\MtkSerialDevice.cs" />
+    <Compile Include="MTK.Client\Device.Handler\MtkSerialDeviceFinderService.cs" />
+    <Compile Include="MTK.Client\Device.Handler\MtkUsbDevice.cs" />
+    <Compile Include="MTK.Client\Device.Handler\MtkUsbDeviceFinderService.cs" />
+    <Compile Include="MTK.Client\Device.Handler\Native.cs" />
+    <Compile Include="MTK.Client\Gui\android.cs" />
+    <Compile Include="MTK.Client\Gui\gui.cs" />
+    <Compile Include="MTK.Client\Hardware\hwcrypto.cs" />
+    <Compile Include="MTK.Client\Hardware\seccfg.cs" />
+    <Compile Include="MTK.Client\Library\MtkSparse.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkGptRepairService.cs" />
+    <Compile Include="MTK.Client\Library\Extension.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxDeviceControlService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxDeviceControlSetupService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxDeviceStorageInfoService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxFlashInfo.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxFlashInfoType.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxGptService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxPartitionChecksumService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxPartitionPacketLengthService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxPartitionService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxUploadBootService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxUploadCalculationResult.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxUploadCalculatorService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxUploadEmiService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxUploadPatchService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxUploadResult.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxUploadService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxUploadSetupService.cs" />
+    <Compile Include="MTK.Client\Library\MtkDaxUploadSyncService.cs" />
+    <Compile Include="MTK.Client\Library\PartitionPacketLength.cs" />
+    <Compile Include="MTK.Client\Library\Exceptions.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\IMtkDevice.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\IMtkSerialDevice.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\IMtkUsbDevice.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkAuthExploitBromService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkAuthExploitDaService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkAuthExploitKamakiriService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkAuthExploitPayloadService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkAuthExploitService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkBootloaderCrashService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkChipConfig.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkDaEntry.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkDaRegion.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkDaService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkDaWriteDataService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkDaWriteService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkDeviceExtension.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkDeviceInfo.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkDeviceWaiterService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkDeviceWaitResult.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkGpt.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkGptParserService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkGptPartition.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkHandshakeService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkListPartition.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkPreloader.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkPreloaderEmi.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkPreloaderIndex.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkPreloaderParserService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkPreloaderService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkReadWrite32Service.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkWatchdogService.cs" />
+    <Compile Include="MTK.Client\Library\Xflash\MtkWatchdogValueCalculatorService.cs" />
+    <Compile Include="MTK.Client\Force.Crc32\Crc32Algorithm.cs" />
+    <Compile Include="MTK.Client\Force.Crc32\Crc32CAlgorithm.cs" />
+    <Compile Include="MTK.Client\Force.Crc32\SafeProxy.cs" />
+    <Compile Include="MTK.Client\Force.Crc32\SafeProxyC.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MTK.Client\Scatter\MtkScatter.cs" />
+    <Compile Include="MTK.Client\utils.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MTK.Client\thread_handler.cs" />
+    <Compile Include="USBFastConnect.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C4.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconireverse.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

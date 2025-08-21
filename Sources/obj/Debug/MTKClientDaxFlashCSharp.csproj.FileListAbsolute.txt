@@ -1,0 +1,10 @@
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\obj\Debug\MTKClientDaxFlashCSharp.csproj.AssemblyReference.cache
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\obj\Debug\mtkclient.Main.resources
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\obj\Debug\mtkclient.Properties.Resources.resources
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\obj\Debug\MTKClientDaxFlashCSharp.csproj.GenerateResource.cache
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\obj\Debug\MTKClientDaxFlashCSharp.csproj.CoreCompileInputs.cache
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\bin\Debug\MTKClientDaxFlashCSharp.exe.config
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\bin\Debug\MTKClientDaxFlashCSharp.exe
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\bin\Debug\MTKClientDaxFlashCSharp.pdb
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\obj\Debug\MTKClientDaxFlashCSharp.exe
+D:\Project\MTKClientDaxFlashCsharp_17022024\Sources\obj\Debug\MTKClientDaxFlashCSharp.pdb
